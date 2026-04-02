@@ -58,7 +58,6 @@
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3109.1839202203754!2d-104.8202072!3d38.8344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87134b1c8d8d8d8d%3A0x1d8d8d8d8d8d8d8d!2s123%20River%20Canyon%20Road%2C%20Colorado%20Springs%2C%20CO%2080904!5e0!3m2!1sen!2sus!4v1234567890"
                     width="100%"
                     height="400"
-                    style="border: 0;"
                     allowfullscreen=""
                     loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade">
@@ -113,15 +112,15 @@
                     <label>Purpose of Inquiry *</label>
                     <div class="radio-group">
                         <label class="radio-label">
-                            <input type="radio" name="purpose" value="General Inquiry" required>
+                            <input type="radio" id="general" name="purpose" value="General Inquiry" required>
                             General Inquiry
                         </label>
                         <label class="radio-label">
-                            <input type="radio" name="purpose" value="Reservation Question" required>
+                            <input type="radio" id="reservation" name="purpose" value="Reservation Question" required>
                             Reservation Question
                         </label>
                         <label class="radio-label">
-                            <input type="radio" name="purpose" value="Website Suggestion" required>
+                            <input type="radio" id="suggestion" name="purpose" value="Website Suggestion" required>
                             Website Suggestion
                         </label>
                     </div>
@@ -133,8 +132,8 @@
                 </div>
 
                 <div class="form-group checkbox">
-                    <label>
-                        <input type="checkbox" name="newsletter" value="yes">
+                    <label for="newsletter">
+                        <input type="checkbox" id="newsletter" name="newsletter" value="yes">
                         Subscribe to our newsletter for exclusive offers and updates
                     </label>
                 </div>
