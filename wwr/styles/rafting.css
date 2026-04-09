@@ -714,3 +714,57 @@ footer p {
 .trip-table a:hover {
     text-decoration: underline;
 }
+
+/* =====================
+   Mobile Responsive Design
+   ===================== */
+@media (max-width: 768px) {
+    header,
+    main,
+    footer {
+        width: 100%;
+        padding: 0 16px;
+        box-sizing: border-box;
+    }
+
+    header {
+        grid-template-columns: auto 1fr;
+        flex-wrap: wrap;
+    }
+
+    header img {
+        width: 80px;
+    }
+
+    header nav ul {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .featured-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .trips-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .trip-table {
+        font-size: 14px;
+    }
+
+    .trip-table th,
+    .trip-table td {
+        padding: 8px 4px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    nav a {
+        display: block;
+        padding: 8px;
+    }
+}
