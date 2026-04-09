@@ -501,7 +501,7 @@ footer p {
    ===================== */
 .featured-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 20px;
     margin: 20px 0;
 }
@@ -614,7 +614,7 @@ footer p {
    ===================== */
 .trips-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     margin: 30px 0;
 }
@@ -741,12 +741,9 @@ footer p {
         gap: 8px;
     }
 
-    .featured-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .trips-grid {
-        grid-template-columns: 1fr;
+    .grid-item,
+    .trip-card {
+        min-width: 0;
     }
 
     .trip-table {
